@@ -1,0 +1,113 @@
+
+  Synesthesia README
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+    syn·es·the·sia - "... a condition in which a sensory stimulus presented in one modality
+                      evokes a sensation in a different modality"
+                                                    - http://www.scholarpedia.org/article/Synesthesia
+
+
+Synesthesia is an FPGA project that aims to study the deeper inter-
+relationships that exist in our perceptions of light & sound. It
+tries to answer the questions "What makes a good visualization".
+
+Is there really a difference between light & sound? Are they not
+different manifestations of a singular experience? The deeper one
+tries to understand the beautiful entanglements of light & sound,
+the more one undersands on how one percieves them; of how the
+experience is created in one's mind.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Downloading
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Documentation
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Target System
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Synesthesia is designed & architected for the DE1 FPGA board manufactured
+by Terasic. For more details, visit the link
+                      http://www.terasic.com.tw/cgi-bin/page/archive.pl?No=83
+
+Given the hardware rigidity, the internal modules are designed to be as
+generic as possible. There are however many tight HW-SW couplings that
+have infulenced the architecture, which makes migrating to embedded
+processors other than NIOS II very difficult.
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Licensing
+
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+  - All RTL files related to custom hardware blocks were designed &
+    coded by yours truly. Please feel free to parse, hack, tamper and
+    reuse any part this code for your own projects or understanding
+    purposes.
+
+    /*
+        Synesthesia - Copyright (C) 2012 Gregory Matthew James.
+
+        This file is part of Synesthesia.
+
+        Synesthesia is free; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 3 of the License, or
+        (at your option) any later version.
+
+        Synesthesia is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program. If not, see <http://www.gnu.org/licenses/>.
+    */
+
+
+  - There are Altera Megafunction generated blocks (found in dgn/rtl/altera folder)
+    that have been generated using Quartus tool from Altera.  They
+    are copyrighted by Altera, but one is free to use them as long
+    as they are intended for programming logic devices manufactured
+    by Altera. This should be fine & many such files have been
+    modified for setting context between synthesis & simulation.
+    
+    /*
+        Copyright (C) 1991-2011 Altera Corporation
+        Your use of Altera Corporation's design tools, logic functions 
+        and other software and tools, and its AMPP partner logic 
+        functions, and any output files from any of the foregoing 
+        (including device programming or simulation files), and any 
+        associated documentation or information are expressly subject 
+        to the terms and conditions of the Altera Program License 
+        Subscription Agreement, Altera MegaCore Function License 
+        Agreement, or other applicable license agreement, including, 
+        without limitation, that your use is for the sole purpose of 
+        programming logic devices manufactured by Altera and sold by 
+        Altera or its authorized distributors.  Please refer to the 
+        applicable agreement for further details.
+    */
+
+  - All Megafunctions used in synesthesia free IPs from Altera.
