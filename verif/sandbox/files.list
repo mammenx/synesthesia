@@ -1,0 +1,108 @@
++incdir+../../dgn/rtl/altera/
++incdir+../../dgn/rtl/avalon/
++incdir+../../dgn/rtl/audio_cortex/
++incdir+../../dgn/rtl/fusiform_gyrus/
++incdir+../../dgn/rtl/visual_cortex/
++incdir+../../dgn/rtl/fpga_top/
+
++incdir+../tb/agents/acortex/
++incdir+../tb/agents/acortex/av_st/
++incdir+../tb/agents/acortex/codec/
++incdir+../tb/agents/fgyrus/
++incdir+../tb/agents/fgyrus/butter/
++incdir+../tb/agents/fgyrus/fft/
++incdir+../tb/agents/vcortex/
++incdir+../tb/agents/cortex_lb/
++incdir+../tb/env/
++incdir+../tb/env/interfaces/
++incdir+../tb/env/seq_item/
++incdir+../tb/seq/fgyrus/
++incdir+../tb/seq/acortex/
++incdir+../tb/seq/vcortex/
++incdir+../tb/tests/
+
+
+//RTL
+-v  ../../dgn/rtl/altera/220model.v
+-v  ../../dgn/rtl/altera/altera_mf.v
+-v  ../../dgn/rtl/altera/complex_mult.v
+-v  ../../dgn/rtl/altera/cordic_ram.v
+-v  ../../dgn/rtl/altera/cycloneii_atoms.v
+-v  ../../dgn/rtl/altera/fft_cache_ram.v
+-v  ../../dgn/rtl/altera/mclk_pll.v
+-v  ../../dgn/rtl/altera/pcm_fifo.v
+-v  ../../dgn/rtl/altera/divider.v
+-v  ../../dgn/rtl/altera/pcm_sample_ram.v
+-v  ../../dgn/rtl/altera/syn_sys_pll.v
+-v  ../../dgn/rtl/altera/twiddle_ram.v
+-v  ../../dgn/rtl/altera/wav_hdr_ram.v
+-v  ../../dgn/rtl/altera/wm_xclk_mux.v
+-v  ../../dgn/rtl/altera/pwm_ram.v
+-v  ../../dgn/rtl/altera/ff_32w_128d.v
+-v  ../../dgn/rtl/altera/ff_96w_128d.v
+-v  ../../dgn/rtl/altera/adc_cap_ram.v
+-v  ../../dgn/rtl/altera/fft_res_ram.v
+
+
+-v  ../../dgn/rtl/avalon/av_mm_slave_stalled.v
+-v  ../../dgn/rtl/avalon/fft_cache_mm_slave.v
+
+
+-v  ../../dgn/rtl/audio_cortex/acortex2fgyrus_bffr.v
+-v  ../../dgn/rtl/audio_cortex/acortex_lb.v
+//  -v  ../../dgn/rtl/audio_cortex/acortex_reg_map.v
+-v  ../../dgn/rtl/audio_cortex/acortex_top.v
+-v  ../../dgn/rtl/audio_cortex/i2c_master.v
+-v  ../../dgn/rtl/audio_cortex/pulse_sync.v
+-v  ../../dgn/rtl/audio_cortex/pulse_sync_tggl.v
+-v  ../../dgn/rtl/audio_cortex/sram_arb.v
+-v  ../../dgn/rtl/audio_cortex/sram_drvr.v
+-v  ../../dgn/rtl/audio_cortex/sram_ff_cntrlr.v
+-v  ../../dgn/rtl/audio_cortex/sram_lb.v
+-v  ../../dgn/rtl/audio_cortex/wav_prsr.v
+-v  ../../dgn/rtl/audio_cortex/dd_sync.v
+-v  ../../dgn/rtl/audio_cortex/clk_mux.v
+-v  ../../dgn/rtl/audio_cortex/wm8731_drvr_dac.v
+
+
+-v ../../dgn/rtl/fusiform_gyrus/butterfly_wing.v
+-v ../../dgn/rtl/fusiform_gyrus/complex_div.v
+-v ../../dgn/rtl/fusiform_gyrus/fgyrus_fsm.v
+-v ../../dgn/rtl/fusiform_gyrus/fgyrus_lb.v
+-v ../../dgn/rtl/fusiform_gyrus/fgyrus_top.v
+
+
+-v ../../dgn/rtl/visual_cortex/pwm_gen.v
+-v ../../dgn/rtl/visual_cortex/pwm_refresh.v
+-v ../../dgn/rtl/visual_cortex/vcortex_lb.v
+//  -v ../../dgn/rtl/visual_cortex/vcortex_reg_map.v
+-v ../../dgn/rtl/visual_cortex/vcortex_top.v
+
+-v ../../dgn/rtl/avalon/syn_lb_cdc_bridge.v
+
+-v ../../dgn/rtl/fpga_top/syn_cortex_lb.v
+-v ../../dgn/rtl/fpga_top/syn_cortex_top.v
+  
+
+//System Verilog DPI
+../tb/dpi/fft.c
+../tb/dpi/syn_dpi_vcs.c
+
+//TB
+../tb/env/math_pkg.sv
+../tb/env/dsp_pkg.sv
+../tb/env/fileio_pkg.sv
+
+-v  ../tb/env/interfaces/syn_acortex2fgyrus_if.sv
+-v  ../tb/env/interfaces/syn_aud_codec_if.sv
+-v  ../tb/env/interfaces/syn_av_mm_if_0.sv
+-v  ../tb/env/interfaces/syn_av_mm_if_1.sv
+-v  ../tb/env/interfaces/syn_av_mm_if_2.sv
+-v  ../tb/env/interfaces/syn_av_st_if.sv
+-v  ../tb/env/interfaces/syn_fgyrus_butter_if.sv
+-v  ../tb/env/interfaces/syn_sram_if.sv
+-v  ../tb/env/interfaces/syn_fgyrus_fft_ram_if.sv
+-v  ../tb/env/interfaces/syn_cortex_lb_if.sv
+-v  ../tb/env/interfaces/syn_pwm_if.sv
+
+../tb/top/syn_tb_top.sv
